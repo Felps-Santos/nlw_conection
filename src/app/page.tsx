@@ -1,7 +1,7 @@
-import { ArrowRight, Copy } from "lucide-react";
-import { Button } from "@/components/button";
-import { IconButton } from "@/components/icon-button";
-import { Input } from "@/components/input";
+import { ArrowRight, Copy, Mail } from 'lucide-react'
+import { Button } from '@/components/button'
+import { IconButton } from '@/components/icon-button'
+import { InputField, InputIcon, InputRoot } from '@/components/input'
 
 export default function Home() {
   return (
@@ -13,10 +13,14 @@ export default function Home() {
       <IconButton>
         <Copy />
       </IconButton>
-      <Input 
-        type="email"
-        placeholder="Digite seu e-mail"
-      />
+      <div>
+        <InputRoot>
+          <InputIcon>
+            <Mail />
+          </InputIcon>
+          <InputField />
+        </InputRoot>
+      </div>
     </main>
-  );
+  )
 }
